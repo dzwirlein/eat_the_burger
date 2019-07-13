@@ -4,7 +4,8 @@ use database burgers_db;
 
 create table burgers (
 
-    id int PRIMARY KEY not null,
+    id int auto_increment not null,
     burger_name VARCHAR (50) not null,
-    devoured boolean
+    devoured boolean default false,
+    primary key (id)
 );
