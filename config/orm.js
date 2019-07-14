@@ -75,7 +75,7 @@ var orm = {
     
         queryString += " SET ";
         queryString += objToSql(objColVals);
-        queryString += " WHERE ";
+        queryString += " WHERE id = ";
         queryString += condition;
     
         console.log(queryString);

@@ -25,6 +25,7 @@ router.get("/", function(req, res) {
   });
   
   router.put('/burgers/:id', function(req, res) {
+    
     burger.update(
       {devoured: true
       },req.params.id,
@@ -35,20 +36,6 @@ router.get("/", function(req, res) {
   });
   
 
-
-
-//   router.put('/burgers/update', function(req, res) {
-//         burger.update(req.body.burger_id, function(result){
-//             console.log(result);
-//             res.redirect("/")
-//         });
-//   });
-
-// router.post("/burgers/create", function(req,res){
-//     burger.create(req.body.burger_name, function(res){
-//         res.redirect('/');
-//     })
-// })
 
 
 module.exports = router;
